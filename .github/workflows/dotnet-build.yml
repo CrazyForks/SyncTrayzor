@@ -153,6 +153,19 @@ jobs:
           choco push $packagePath --source https://push.chocolatey.org/
         shell: powershell
 
+      - name: Sync winget-pkgs fork with upstream
+        env:
+          GH_TOKEN: ${{ secrets.WINGET_TOKEN }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $defaultBranch = gh api /repos/microsoft/winget-pkgs --jq .default_branch
+
+          Write-Host "Syncing ${{ github.repository_owner }}/winget-pkgs branch '$defaultBranch' from upstream..."
+
+          gh api --method POST /repos/${{ github.repository_owner }}/winget-pkgs/merge-upstream -f branch="$defaultBranch"
+        shell: powershell
+
       - name: Publish to winget
         uses: vedantmgoyal9/winget-releaser@7bd472be23763def6e16bd06cc8b1cdfab0e2fd5 # main
         with:
