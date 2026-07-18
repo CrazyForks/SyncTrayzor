@@ -555,7 +555,7 @@
     <value>اشعارات</value>
   </data>
   <data name="SettingsView_WatchedFolders_Header_Watched" xml:space="preserve">
-    <value>مشاهد</value>
+    <value>مُشاهَد</value>
   </data>
   <data name="SettingsView_WatchedFolders_Unavailable" xml:space="preserve">
     <value>المجلدات غير متوفرة. الرجاء تشغيل Syncthing</value>
@@ -568,40 +568,40 @@
     <comment>Shown in the top right of the menu bar, if the user hasn't yet donated</comment>
   </data>
   <data name="ShellView_Menu_File" xml:space="preserve">
-    <value>_ملف</value>
+    <value>ملف</value>
   </data>
   <data name="ShellView_Menu_File_ConflictResolver" xml:space="preserve">
     <value>_مصلح التعارض</value>
   </data>
   <data name="ShellView_Menu_File_Exit" xml:space="preserve">
-    <value>_خروج</value>
+    <value>خروج</value>
   </data>
   <data name="ShellView_Menu_File_Settings" xml:space="preserve">
-    <value>_اعدادات</value>
+    <value>اعدادات</value>
   </data>
   <data name="ShellView_Menu_Help" xml:space="preserve">
-    <value>_مساعدة</value>
+    <value>مساعدة</value>
   </data>
   <data name="ShellView_Menu_Help_About" xml:space="preserve">
-    <value>_عن البرنامج</value>
+    <value>عن</value>
   </data>
   <data name="ShellView_Menu_Syncthing_KillAll" xml:space="preserve">
-    <value>ان_هاء عمليات Syncthing</value>
+    <value>انهاء عمليات Syncthing</value>
   </data>
   <data name="ShellView_Menu_Syncthing_OpenExternal" xml:space="preserve">
-    <value>افت_ح في متصفح خارجي</value>
+    <value>فتح في متصفح خارجي</value>
   </data>
   <data name="ShellView_Menu_Syncthing_Refresh" xml:space="preserve">
-    <value>_حدث المتصفح</value>
+    <value>انعش المتصفح</value>
   </data>
   <data name="ShellView_Menu_Syncthing_Restart" xml:space="preserve">
-    <value>اعد _تشغيل</value>
+    <value>إعادة التشغيل</value>
   </data>
   <data name="ShellView_Menu_Syncthing_Start" xml:space="preserve">
-    <value>ا_بدا</value>
+    <value>ابدأ</value>
   </data>
   <data name="ShellView_Menu_Syncthing_Stop" xml:space="preserve">
-    <value>تو_قف</value>
+    <value>توقف</value>
   </data>
   <data name="ShellView_Menu_View" xml:space="preserve">
     <value>الم_ظهر</value>
@@ -748,7 +748,7 @@
     <value>شارك المجلد؟</value>
   </data>
   <data name="TrayIcon_Menu_Exit" xml:space="preserve">
-    <value>_خروج</value>
+    <value>خروج</value>
     <comment>Menu option available when right-clicking the tray icon. Instructs SyncTrayzor to exit</comment>
   </data>
   <data name="TrayIcon_Menu_OpenFolder" xml:space="preserve">
@@ -756,23 +756,23 @@
     <comment>Menu option available when right-clicking the tray icon. Is a header for a list of folders, each of which can be clicked to open it in Explorer</comment>
   </data>
   <data name="TrayIcon_Menu_RestartSyncthing" xml:space="preserve">
-    <value>_اعادة تشغيل Syncthing</value>
+    <value>إعادة تشغيل Syncthing</value>
     <comment>Menu option available when right-clicking the tray icon. Instructs SyncTrayzor to restart</comment>
   </data>
   <data name="TrayIcon_Menu_Restore" xml:space="preserve">
-    <value>_افتح SyncTrayzor</value>
+    <value>فتح SyncTrayzor</value>
     <comment>Menu option available when right-clicking the tray icon. Instructs SyncTrayzor to restore itself from the tray, and be visible to the user</comment>
   </data>
   <data name="TrayIcon_Menu_Settings" xml:space="preserve">
-    <value>إ_عدادات</value>
+    <value>إعدادات</value>
     <comment>Menu option available when right-clicking the tray icon. Instructs SyncTrayzor to show the Settings dialog</comment>
   </data>
   <data name="TrayIcon_Menu_StartSyncthing" xml:space="preserve">
-    <value>_ابدأ Syncthing</value>
+    <value>ابدأ Syncthing</value>
     <comment>Menu option available when right-clicking the tray icon. Instructs SyncTrayzor to start Syncthing. Only available if Syncthing isn't running</comment>
   </data>
   <data name="TrayIcon_Menu_StopSyncthing" xml:space="preserve">
-    <value>أ_وقف Syncthing</value>
+    <value>أوقف Syncthing</value>
     <comment>Menu option available when right-clicking the tray icon. Instructs SyncTrayzor to stop Syncthing. Only available if Syncthing is running</comment>
   </data>
   <data name="UnhandledExceptionView_IntroMessage" xml:space="preserve">
@@ -818,5 +818,57 @@ SyncTrayzor  سوف يقوم بالاغلاق. ناسف لذلك</value>
   <data name="ViewerView_SyncthingStopped" xml:space="preserve">
     <value>توقف Syncthing </value>
     <comment>Text shown in the centre of the screen when Syncthing is stopped</comment>
+  </data>
+  <data name="ShellView_Menu_Syncthing" xml:space="preserve">
+    <value>Syncthing</value>
+  </data>
+  <data name="SettingsView_Section_Syncthing" xml:space="preserve">
+    <value>Syncthing</value>
+  </data>
+  <data name="SettingsView_Section_SyncTrayzor" xml:space="preserve">
+    <value>SyncTrayzor</value>
+  </data>
+  <data name="Dialog_FailedToStartSyncthing_Message" xml:space="preserve">
+    <value>تعذّر بدء Syncthing.
+
+اقرأ السجل لمعرفة سبب المشكلة.
+
+إذا لمحت "FATAL: Cannot open database"، اغلق أي مثيل مفتوح لـSyncthing. إذا كان تعطل SyncTrayzor، قد تكون هناك عمليات فعّالة لـSyncthing. استخدم اختيار القائمة «Syncthing -&gt; انهاء عمليات Syncthing» لإيقاف تلك العمليات، ثم استخدم «Syncthing -&gt; ابدأ» لبدء Syncthing مجددًا.</value>
+  </data>
+  <data name="TrayIcon_Menu_CloseToTray" xml:space="preserve">
+    <value>اغلق إلى شريط المهام</value>
+  </data>
+  <data name="SettingsView_Tab_Syncthing" xml:space="preserve">
+    <value>Syncthing</value>
+  </data>
+  <data name="SettingsView_Tab_SyncTrayzor" xml:space="preserve">
+    <value>SyncTrayzor</value>
+  </data>
+  <data name="ShellView_Menu_View_SyncthingConsole" xml:space="preserve">
+    <value>وحدة تحكم Syncthing</value>
+  </data>
+  <data name="FileTransfersTrayView_NothingToShow" xml:space="preserve">
+    <value>لا توجد ملفات تم تنزيلها مؤخرًا</value>
+  </data>
+  <data name="TrayIcon_Balloon_FinishedSyncing_Multiple" xml:space="preserve">
+    <value>{0}: {1:list:{}|; }</value>
+  </data>
+  <data name="SettingsView_Tab_Logging" xml:space="preserve">
+    <value>التسجيل</value>
+  </data>
+  <data name="ConflictResolutionView_Header_ModifiedBy" xml:space="preserve">
+    <value>تم تعديله بواسطة</value>
+  </data>
+  <data name="SettingsView_Alerts_SeeFolders" xml:space="preserve">
+    <value>تعطيل الرسائل البالونية تمامًا في تبويبة «المجلدات»</value>
+  </data>
+  <data name="ConflictResolutionView_ChooseNewestConflict_Button" xml:space="preserve">
+    <value>حدّد احدث تعارض</value>
+  </data>
+  <data name="ConflictResolutionView_ChooseNewestConflict_Text" xml:space="preserve">
+    <value>يحدّد احدث تعارض حدث مؤخرًا</value>
+  </data>
+  <data name="ConflictResolutionView_ChooseNewest_Button" xml:space="preserve">
+    <value>حدّد الاحدث</value>
   </data>
 </root>
