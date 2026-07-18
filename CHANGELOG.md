@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2026-07-18
+
+### Added
+
+- Remember popup width and height, add option to keep on top (#170 by @meld-cp)
+
+### Fixed
+
+- Improve conflict finder regex to find filenames without extension (#181 by @pilcru)
+- Improve handling of long filenames in the Conflict Resolver (issue #218)
+- Handle exceptions when scan request fails (issue #255)
+
+### Changed
+
+- Upgrade runtime to .NET 10
+- Dependency and runtime upgrades, embedded browser upgraded to Chromium/CEF v146
+- Translation updates
+- Improvements to the v1 -> v2 upgrade flow (ensure v1 SyncTrayzor is closed during upgrade)
+- Warn and refuse startup if multiple SyncTrayzor processes (from different locations) use the same config (hopefully fixes the CEF init failure messages)
+
 ## [2.1.0] - 2025-12-17
 
 ### Added
